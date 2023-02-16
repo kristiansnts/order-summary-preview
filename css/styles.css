@@ -25,9 +25,9 @@ body {
 }
 
 main {
-    width: 80vmin;
-    height: 80vh;
-    background-color: aliceblue;
+    width: 21rem;
+    height: 31rem;
+    background-color: white;
     border-radius: 1rem;
     text-align: center;
     font-size: .9rem;
@@ -41,6 +41,11 @@ main {
 .order-summary {
     padding: 1rem;
     font-weight: bold;
+}
+
+.order-desc {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .order-plan {
@@ -64,6 +69,11 @@ main {
     font-weight: bold;
 }
 
+.order-plan a:active {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.725);
+}
+
 .order-plan .price {
     display: flex;
     flex-direction: column;
@@ -71,23 +81,41 @@ main {
     align-items: flex-start;
 }
 
+.price p {
+    color: #797979;
+}
+
 .order-plan img {
     width: 2.5rem;
     height: 2.5rem;
 }
 
-.order-process button {
+.order-process a {
+    display: block;
     padding: 1rem 1rem;
-    margin: .2rem;
     border: none;
-    width: 90%;
+    margin: 0 auto;
+    width: 80%;
     border-radius: .5rem;
+    text-decoration: none;
+    color: #797979;
+    font-weight: bold;
 }
 
-.order-process button:first-child {
+.order-process a:first-child {
     background-color: var(--bg-color-button);
     color: white;
     font-weight: bold;
+    box-shadow: 0px 10px 20px #ccc;
+}
+
+.order-process a:first-child:active {
+    background-color: hsla(245, 75%, 52%, 0.853);
+    color: white;
+}
+
+.order-process a:active {
+    color: black;
 }
 
 /* == RESPONSIVE == */
