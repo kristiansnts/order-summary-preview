@@ -1,0 +1,99 @@
+* {
+    /* == CSS RESET == */
+    margin: 0;
+    padding: 0;
+
+    /* == Color Assets */
+    --bg-color: hsl(225, 100%, 94%);
+    --bg-color-button: hsl(245, 75%, 52%);
+    --bg-color-plan: hsla(224, 23%, 55%, .1);
+
+    /* Font Assets */
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 80vmin;
+    height: 80vh;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.order-img img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.order-summary {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.order-plan {
+    display: flex;
+    width: 80%;
+    padding: .8rem;
+    margin: 1rem auto;
+    background-color: var(--bg-color-plan);
+    border-radius: .5rem .5rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order-plan h2 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.order-plan a {
+    color: var(--bg-color-button);
+    font-weight: bold;
+}
+
+.order-plan .price {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    align-items: flex-start;
+}
+
+.order-plan img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.order-process button {
+    padding: 1rem 1rem;
+    margin: .2rem;
+    border: none;
+    width: 90%;
+    border-radius: .5rem;
+}
+
+.order-process button:first-child {
+    background-color: var(--bg-color-button);
+    color: white;
+    font-weight: bold;
+}
+
+/* == RESPONSIVE == */
+
+@media (min-width: 375px) {
+   body {
+    background-image: url(../images/pattern-background-desktop.svg);
+   } 
+}
